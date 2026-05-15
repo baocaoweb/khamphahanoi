@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ | Khám phá Hà Nội</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><h2>Hanoi<span>Travel</span></h2></a
+        >
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="nut-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#featured">Địa điểm</a></li>
+          <li><a href="amthuc.html">Ẩm thực</a></li>
+          <li><a href="lienhe.html" class="active">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <a href="dangnhap.html" class="login" id="authButton">Đăng nhập</a>
+    </header>
+
+    <main class="khu-vuc-lien-he">
+      <div class="thong-tin-lh">
+        <h3>Thông tin liên hệ</h3>
+        <ul class="danh-sach-lh">
+          <li>
+            📍 <strong>Địa chỉ:</strong>235 Hoàng Quốc Việt-Nghĩa Đô-Hà Nội
+          </li>
+          <li>📞 <strong>Điện thoại:</strong> 0123 456 789</li>
+          <li>✉️ <strong>Email:</strong> hotro@hanoitravel.vn</li>
+          <li>
+            ⏰ <strong>Giờ làm việc:</strong> 08:00 - 17:00 (Thứ 2 - Thứ 7)
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-lh">
+        <h3>Gửi tin nhắn cho chúng tôi</h3>
+
+        <form>
+          <div class="nhom-nhap-lieu">
+            <label for="hoten">Họ và tên *</label>
+            <input
+              type="text"
+              id="hoten"
+              placeholder="Nhập tên của bạn"
+              required
+            />
+            <span id="error-name" class="error-message"></span>
+          </div>
+
+          <div class="nhom-nhap-lieu">
+            <label for="email">Địa chỉ Email *</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+          <div class="nhom-nhap-lieu">
+            <label for="noidung">Nội dung tin nhắn *</label>
+            <textarea
+              id="noidung"
+              rows="5"
+              placeholder="Viết nội dung chi tiết ở đây..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="nut-gui-tin">Gửi Tin Nhắn</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Khám phá Hà Nội</p>
+      <div class="mangxh">
+        <span>Theo dõi chúng tôi tại:</span>
+        <a href="https://facebook.com" class="lienket fb" target="_blank">f</a>
+        <a
+          href="https://instagram.com"
+          class="lienket instagram"
+          target="_blank"
+          >ig</a
+        >
+        <a href="https://youtube.com" class="lienket ytb" target="_blank"
+          >ytb</a
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

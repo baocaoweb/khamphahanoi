@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký | Hanoi Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="auth-page">
+      <div class="auth-card">
+        <h2>Đăng ký</h2>
+        <p>Tạo tài khoản mới để khám phá trang.</p>
+
+        <form id="registerForm" action="index.html">
+          <div class="form-group">
+            <label for="registerName">Họ và tên</label>
+            <input
+              type="text"
+              id="registerName"
+              placeholder="Nhập họ và tên"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="registerEmail">Email</label>
+            <input
+              type="email"
+              id="registerEmail"
+              placeholder="Nhập email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="registerPassword">Mật khẩu</label>
+            <input
+              type="password"
+              id="registerPassword"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="registerConfirmPassword">Xác nhận mật khẩu</label>
+            <input
+              type="password"
+              id="registerConfirmPassword"
+              placeholder="Nhập lại mật khẩu"
+              required
+            />
+          </div>
+          <div class="auth-action">
+            <a href="dangnhap.html">Đã có tài khoản? Đăng nhập</a>
+          </div>
+          <button type="submit">Đăng ký</button>
+          <a href="index.html" class="quay-lai">←Quay lại trang chủ</a>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const registerForm = document.getElementById("registerForm");
+
+      registerForm.addEventListener("submit", function () {
+        localStorage.setItem("isLoggedIn", "true");
+      });
+    </script>
+  </body>
+</html>

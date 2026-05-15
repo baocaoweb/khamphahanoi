@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập | Hanoi Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="auth-page">
+      <div class="auth-card">
+        <h2>Đăng nhập</h2>
+        <p>Vui lòng nhập email và mật khẩu để tiếp tục.</p>
+
+        <form id="loginForm" action="index.html">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="Nhập email của bạn"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Mật khẩu</label>
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+          </div>
+          <div class="auth-action">
+            <a href="dangky.html">Chưa có tài khoản? Đăng ký</a>
+          </div>
+          <button type="submit">Đăng nhập</button>
+          <a href="index.html" class="quay-lai">←Quay lại trang chủ</a>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+
+      loginForm.addEventListener("submit", function () {
+        // Ghi vào bộ nhớ trình duyệt để kích hoạt đoạn code đổi chữ bên index.html
+        localStorage.setItem("isLoggedIn", "true");
+      });
+    </script>
+  </body>
+</html>
