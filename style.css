@@ -113,20 +113,14 @@ a {
   background-color: #c0392b;
   transform: translateY(-3px);
 }
-
-.khu-vuc {
+.gioithieu {
+  background: #fdf8ef;
   padding: 80px 30px;
 }
-
 .khung {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.gioi-thieu {
-  background: #fdf8ef;
-}
-
 .luoi-gioi-thieu {
   display: grid;
   grid-template-columns: 1fr 1fr;
